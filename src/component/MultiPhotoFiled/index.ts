@@ -1,0 +1,1 @@
+export {MultiPhotoFiled} from './MultiPhotoFiled';

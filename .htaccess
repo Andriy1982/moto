@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  <IfModule mod_negotiation.c>
+      Options -MultiViews
+  </IfModule>
+
+  RewriteEngine On
+
+  #HTTPS use only
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ index.html [QSA,L]
+</IfModule>

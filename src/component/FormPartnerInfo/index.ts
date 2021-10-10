@@ -1,0 +1,1 @@
+export {FormPartnerInfo} from './FormPartnerInfo';

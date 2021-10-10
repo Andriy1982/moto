@@ -1,0 +1,1 @@
+export {PartnersMap} from './PartnersMap';

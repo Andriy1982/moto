@@ -1,0 +1,1 @@
+export {ConfirmResetPassword} from './ConfirmResetPassword';
